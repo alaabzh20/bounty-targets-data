@@ -33,4 +33,4 @@ jobs:
 
       - name: Push changes to fork main
         run: |
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main --force
+          git push https://x-access-token:${{ secrets.SYNC_FORK }}@github.com/${{ github.repository }}.git main --force
